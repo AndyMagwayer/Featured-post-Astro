@@ -27,6 +27,7 @@ h1{
 
 h2{
     font-size: $h2;
+    line-height: 133%;
 }
 
 h3{
@@ -47,4 +48,20 @@ h6{
 
 a{
     color: $secondary;
+}
+
+.top-title{
+    color: $secondary;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+}
+
+.text{
+    color: $gray-400;
+    font-size: 16px;
+    line-height: 28px;
+
 }

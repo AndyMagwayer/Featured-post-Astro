@@ -1,0 +1,54 @@
+---
+import TheButton from "../the-button.astro";
+import FeaturedHeroImage from "../../assets/images/fff-bg.jpg"
+---
+
+<section class="featured-posts">
+    <div class="container wrapper">
+        <!-- left -->
+        <div class="content">
+            <p class="top-title">Featured Post</p>
+            <h2 class="title">Step-by-step guide to choosing great font pairs</h2>
+            <p class="info">By John Doe   l   May 23, 2022 </p>
+            <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <TheButton>
+                <span>Read More</span>
+                <i class="fas fa-chevron-right"></i>
+            </TheButton>
+        </div>
+
+        <!-- right -->
+        <div class="image-wrapper">
+            <img src={FeaturedHeroImage} alt="FeaturedHeroImage ">
+        </div>
+    </div>
+</section>
+
+
+<style lang="scss">
+@import "../../assets/styles/variables.scss" ;
+
+    .featured-posts{
+        padding: 174px 0 93px ; 
+        background-color: $gray-300;
+
+      .wrapper{
+        display: flex;
+        justify-content: space-between;
+         align-items: center;
+
+         .content{
+            max-width: 630px;
+
+            .title{
+                margin: 20px 0 16px;
+            }
+
+            .text{
+                margin: 16px 0 32px;
+            }
+
+         }
+      }
+    }
+</style>
