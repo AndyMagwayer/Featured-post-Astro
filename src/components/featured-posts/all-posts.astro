@@ -1,0 +1,39 @@
+---
+import PostCard from "../post-card.astro";
+---
+
+<section class="all-posts">
+  <div class="container">
+    <div class="head">
+      <h1 class="title">All posts</h1>
+    </div>
+
+    <div class="wrapper">
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../assets/styles/variables.scss";
+
+  .all-posts {
+    padding: 65px 0;
+
+    .head {
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba($gray-400, $alpha: 0.3);
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 64px ;
+        margin-top: 64px;
+    }
+  }
+</style>
