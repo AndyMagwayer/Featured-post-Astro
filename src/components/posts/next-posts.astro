@@ -1,0 +1,97 @@
+---
+import PostCard1 from "../../assets/images/post-card1.jpg";
+import PostCard2 from "../../assets/images/post-card2.jpg";
+import PostCard3 from "../../assets/images/post-card3.jpg";
+import PostCard4 from "../../assets/images/post-card4.jpg";
+import PostCard5 from "../../assets/images/post-card5.jpg";
+
+---
+
+<section class="next-posts">
+    <div class="container">
+        <h2 class="title">What to read next</h2>
+
+
+        <div class="wrapper">
+            <!-- post-card -->
+            <div class="post-card">
+                <div class="image">
+                    <img src={PostCard1} alt="image">
+                </div>
+                <p class="info">By <span>John Doe </span>  l   Aug 23, 2021 </p>
+                <h3 class="post-card-title">A UX Case Study Creating a Studious Environment for Students: </h3>
+                <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+
+            </div>
+
+                <!-- post-card -->
+                <div class="post-card">
+                    <div class="image">
+                        <img src={PostCard2} alt="image">
+                    </div>
+                    <p class="info">By <span>John Doe </span>  l   Aug 23, 2021 </p>
+                    <h3 class="post-card-title">A UX Case Study Creating a Studious Environment for Students: </h3>
+                    <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    
+                </div>
+
+                    <!-- post-card -->
+            <div class="post-card">
+                <div class="image">
+                    <img src={PostCard3} alt="image">
+                </div>
+                <p class="info">By <span>John Doe </span>  l   Aug 23, 2021 </p>
+                <h3 class="post-card-title">A UX Case Study Creating a Studious Environment for Students: </h3>
+                <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    @import "../../assets//styles/variables.scss";
+
+    .next-posts{
+      padding-bottom: 128px;
+      
+
+      .wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        padding-bottom: 64px ;
+        border-bottom: 1px solid rgba($gray-400, $alpha: 0.3);
+
+        .post-card{
+            width: 100%;
+            max-width: 405px;
+
+            .image{
+                width: 100%;
+                height: 318px;
+                margin-bottom: 32px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .info{
+                font-size: $text-small;
+
+                span{
+                    counter-reset: $accent;
+                }
+            }
+
+
+            .post-card-title{
+                margin: 16px 0;
+            }
+        }
+      }
+    }
+</style>
