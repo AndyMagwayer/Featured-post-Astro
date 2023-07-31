@@ -1,0 +1,138 @@
+---
+import AuthorImage from "../../assets/images/jonathan-profile-picture.png";
+import categoryicon from "../../assets/images/start-up-icon2.png";
+import postimage from "../../assets/images/photo-of-woman-wearing-eyeglasses-3184405.jpg";
+---
+
+<section class="post-info">
+  <div class="container min">
+    <!-- author-info -->
+    <div class="author-info">
+      <div class="image">
+        <img src={AuthorImage} alt="AuthorImage" />
+      </div>
+      <div class="bio">
+        <h3 class="name">Andrew Jonson</h3>
+        <p class="text">Posted on 27th January 2022</p>
+      </div>
+    </div>
+    <!-- title -->
+    <h1 class="main-title">Step-by-step guide to choosing great font pairs</h1>
+    <div class="category">
+      <img src={categoryicon} alt="icon" />
+      <h4 class="category-name">Startup</h4>
+    </div>
+  </div>
+
+  <!-- banner image -->
+  <div class="container">
+    <div class="banner-image">
+        <img src={postimage} alt="post">
+    </div> 
+  </div>
+
+  <!-- text content -->
+
+  <div class="container min">
+    <div class="text-content">
+        <!-- block -->
+        <div class="text-block">
+            <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+        </div>
+
+        <!-- block -->
+        <div class="text-block">
+            <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+
+            <br>
+
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+
+            <br>
+
+            <ul class="list">
+                <li class="item">Lorem ipsum dolor sit amet</li>
+                <li class="item">Non blandit massa enim nec scelerisque</li>
+                <li class="item">Neque egestas congue quisque egestas</li>
+            </ul>
+
+            <br>
+
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+        </div>
+
+        <!-- block -->
+        <div class="text-block">
+            <h2 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.</p>
+        </div>
+
+        
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../assets/styles/variables.scss";
+
+  .post-info {
+    padding: 200px 0;
+
+    .container.min {
+      max-width: 768px;
+    }
+    .author-info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+
+      .name {
+        color: $accent;
+      }
+    }
+
+    .category {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 34px;
+    }
+
+
+    .banner-image{
+        width: 100%;
+        height: 582px;
+        margin: 64px 0;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+    .text-block{
+        margin-bottom: 48px;
+
+        .title{
+            margin-bottom: 16px;
+        }
+
+        .list{
+            padding-left: 15px;
+            .item{
+                list-style: disc;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 133%;
+                margin-bottom: 2px;
+                color: $gray-500;
+            }
+        }
+    }
+  }
+</style>
