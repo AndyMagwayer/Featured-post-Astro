@@ -1,0 +1,102 @@
+---
+import PostCard1 from "../../assets/images/post-card1.jpg";
+import PostCard2 from "../../assets/images/post-card2.jpg";
+
+---
+
+<section class="user-posts">
+    <div class="container">
+        <h1 class="title">My Posts</h1>
+
+
+        <div class="wrapper">
+            <div class="post-card">
+                <div class="image">
+                  <img src={PostCard1} alt="image" />
+                </div>
+                <div class="content">
+                  <p class="top-title">Startup</p>
+                  <h2 class="card-title">
+                    <a href="/post">Design tips for designers that cover everything you need</a>
+                  </h2>
+                  <p class="text">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="post-card">
+                  <div class="image">
+                    <img src={PostCard2} alt="image" />
+                  </div>
+                  <div class="content">
+                    <p class="top-title">BUSINESS</p>
+                    <h2 class="card-title">
+                      <a href="/post">How to build rapport with your web design clients</a>
+                    </h2>
+                    <p class="text">
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                    </p>
+                  </div>
+                </div>
+
+
+
+        </div>
+
+    </div>
+</section>
+
+
+<style lang="scss">
+      @import "../../assets//styles/variables.scss";
+
+      .user-posts{
+        padding: 128px 0;
+
+
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            margin-top: 64px;
+
+        }
+      }
+      .post-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    .card-title{
+      a{
+        &:hover{
+          color:$accent;
+        }
+      }
+    }
+
+    .image {
+        width: 100%;
+      max-width: 490px;
+      height: 318px;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+
+    .content{
+        .title{
+            margin: 20px 0 16px;
+        }
+    }
+  }
+</style>

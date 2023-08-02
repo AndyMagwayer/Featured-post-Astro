@@ -21,7 +21,7 @@ import TheButton from "./the-button.astro";
                     <a href="" class="menu-link">Contact us</a>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Privacy Policy</a>
+                    <a href="/privacy-policy" class="menu-link">Privacy Policy</a>
                 </li>
             </ul>
         </div>
@@ -87,6 +87,13 @@ import TheButton from "./the-button.astro";
 
                 .menu-link {
                     color: #fff;
+
+
+                    &:hover{
+                        background-color: $primary;
+                        transition: 0.3s;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
