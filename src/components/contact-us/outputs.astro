@@ -1,0 +1,72 @@
+---
+import TheButton from "../the-button.astro";
+---
+
+<div class="outputs">
+  <div class="container">
+    <input type="button" value="Full Name" />
+    <input type="button" value="Your Email" />
+
+    <div><input type="button" value="Query Related  " class="arrow" /></div>
+
+    <div><input type="button" value="Message" class="message" /></div>
+    <button class="btn">Send Message</button>
+  </div>
+</div>
+
+<style lang="scss">
+  @import "../../assets//styles/variables.scss";
+
+  .outputs {
+    padding-top: 32px;
+    padding-bottom: 144px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+
+      .message {
+        display: flex;
+        width: 768px;
+        height: 144px;
+        padding: 24px;
+        align-items: flex-start;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 2px;
+        border: 1px solid rgba(109, 110, 118, 0.5);
+      }
+
+      input {
+        display: flex;
+        width: 768px;
+        padding: 24px;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .input {
+        display: flex;
+        width: 768px;
+        padding: 24px;
+        align-items: center;
+        gap: 565px;
+      }
+
+      .btn {
+        width: 768px;
+        height: 64px;
+        flex-shrink: 0;
+        background: var(--yellow, #ffd050);
+        color: var(--black, #232536);
+        font-family: Sen;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+      }
+    }
+  }
+</style>
