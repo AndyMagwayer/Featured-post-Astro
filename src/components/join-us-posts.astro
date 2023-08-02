@@ -1,0 +1,35 @@
+---
+import TheButton from "./the-button.astro";
+---
+
+<section class="join-us">
+    <div class="container">
+        <div class="wrapper">
+            <h2>Join our team to be a part of our story</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <TheButton>Join Now</TheButton>
+        </div>
+
+    </div>
+</section>
+
+<style lang="scss">
+    @import "../assets/styles/variables.scss";
+    .join-us{
+        padding: 128px 0;
+
+        .wrapper{
+            max-width: 414px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+
+            .text{
+                margin: 16px 0 32px;
+            }
+        }
+    }
+
+    
+</style>
+

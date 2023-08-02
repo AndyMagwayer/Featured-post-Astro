@@ -19,7 +19,7 @@ import PostCard5 from "../../assets/images/post-card5.jpg";
                     <img src={PostCard1} alt="image">
                 </div>
                 <p class="info">By <span>John Doe </span>  l   Aug 23, 2021 </p>
-                <h3 class="post-card-title">A UX Case Study Creating a Studious Environment for Students: </h3>
+                <h3 class="post-card-title"><a href="/post" class="link">A UX Case Study Creating a Studious Environment for Students: </a></h3>
                 <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 
             </div>
@@ -30,9 +30,8 @@ import PostCard5 from "../../assets/images/post-card5.jpg";
                         <img src={PostCard2} alt="image">
                     </div>
                     <p class="info">By <span>John Doe </span>  l   Aug 23, 2021 </p>
-                    <h3 class="post-card-title">A UX Case Study Creating a Studious Environment for Students: </h3>
+                    <h3 class="post-card-title"><a href="/post" class="link">A UX Case Study Creating a Studious Environment for Students: </a></h3>
                     <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-    
                 </div>
 
                     <!-- post-card -->
@@ -41,9 +40,8 @@ import PostCard5 from "../../assets/images/post-card5.jpg";
                     <img src={PostCard3} alt="image">
                 </div>
                 <p class="info">By <span>John Doe </span>  l   Aug 23, 2021 </p>
-                <h3 class="post-card-title">A UX Case Study Creating a Studious Environment for Students: </h3>
+                <h3 class="post-card-title"><a href="/post" class="link">A UX Case Study Creating a Studious Environment for Students: </a></h3>
                 <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-
             </div>
         </div>
     </div>
@@ -53,9 +51,6 @@ import PostCard5 from "../../assets/images/post-card5.jpg";
     @import "../../assets//styles/variables.scss";
 
     .next-posts{
-      padding-bottom: 128px;
-      
-
       .wrapper{
         display: flex;
         justify-content: space-between;
@@ -90,6 +85,15 @@ import PostCard5 from "../../assets/images/post-card5.jpg";
 
             .post-card-title{
                 margin: 16px 0;
+                
+                a{
+                    &:hover{
+                 color: $accent;
+                 text-decoration: overline;
+                 transition: 0.42s;
+                
+                }   
+                }
             }
         }
       }

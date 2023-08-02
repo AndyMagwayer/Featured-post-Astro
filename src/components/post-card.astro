@@ -13,7 +13,7 @@ import PostCard5 from "../assets/images/post-card5.jpg";
   <div class="content">
     <p class="top-title">Startup</p>
     <h2 class="card-title">
-      Design tips for designers that cover everything you need
+      <a href="/post">Design tips for designers that cover everything you need</a>
     </h2>
     <p class="text">
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -30,7 +30,7 @@ import PostCard5 from "../assets/images/post-card5.jpg";
     <div class="content">
       <p class="top-title">BUSINESS</p>
       <h2 class="card-title">
-        How to build rapport with your web design clients
+        <a href="/post">How to build rapport with your web design clients</a>
       </h2>
       <p class="text">
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
@@ -45,7 +45,7 @@ import PostCard5 from "../assets/images/post-card5.jpg";
     <div class="content">
       <p class="top-title">Startup</p>
       <h2 class="card-title">
-        Logo design trends to avoid in 2022
+        <a href="/post">Logo design trends to avoid in 2022</a>
       </h2>
       <p class="text">
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
@@ -60,7 +60,7 @@ import PostCard5 from "../assets/images/post-card5.jpg";
     <div class="content">
       <p class="top-title">TECHNOLOGY</p>
       <h2 class="card-title">
-        8 Figma design systems you can download for free today
+        <a href="/post">  8 Figma design systems you can download for free today </a>
       </h2>
       <p class="text">
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
@@ -78,8 +78,8 @@ import PostCard5 from "../assets/images/post-card5.jpg";
       <h2 class="card-title">
         Font sizes in UI design: The complete guide to follow
       </h2>
-      <p class="text">
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <a class="text">
+        <a href="/post"></a> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. </a>
       </p>
     </div>
   </div>
@@ -92,6 +92,14 @@ import PostCard5 from "../assets/images/post-card5.jpg";
     justify-content: space-between;
     align-items: center;
     gap: 32px;
+
+    .card-title{
+      a{
+        &:hover{
+          color:$accent;
+        }
+      }
+    }
 
     .image {
         width: 100%;
