@@ -1,0 +1,114 @@
+---
+---
+
+<section class="about-us-hero">
+  <div class="container">
+    <div class="wrapper">
+      <!-- left -->
+      <div class="left-block">
+        <p class="top-info">ABOUT US</p>
+        <h1 class="title">
+          We are a team of content writers who share their learnings
+        </h1>
+      </div>
+
+      <!-- right -->
+      <div class="right-block">
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="statistic">
+        <!-- item -->
+        <div class="item">
+          <h2 class="count big-text">12+</h2>
+          <div class="value text">Blogs Published</div>
+        </div>
+
+        <!-- item -->
+        <div class="item">
+          <h2 class="count big-text">18K+</h2>
+          <div class="value text">Views on Finsweet</div>
+        </div>
+
+        <!-- item -->
+        <div class="item">
+          <h2 class="count big-text">30K+</h2>
+          <div class="value text">Total active Users</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../assets/styles/variables.scss";
+
+  .about-us-hero {
+    padding-top: 80px;
+    .wrapper {
+      padding-left: 110px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      transform: translateY(64px);
+      z-index: 10;
+      position: relative;
+
+      .left-block {
+        background: #fff;
+        padding: 64px;
+
+        .title {
+          margin-top: 16px;
+          width: 550px;
+        }
+      }
+    }
+
+    .banner {
+      background-image: url(https://images.pexels.com/photos/3183175/pexels-photo-3183175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding:256px 0 23px 110px;
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        height: 23px;
+        width: 881px;
+        background-color: $accent;
+        bottom: 0;
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        height: 23px;
+        width: 311px;
+        background-color: $primary;
+        bottom: 0;
+      }
+
+      .statistic{
+        display: inline-flex;
+        background-color: $primary;
+        gap: 68px;
+        padding: 32px 48px;
+
+
+        .value{
+          color: $secondary;
+        }
+      }
+    }
+  }
+</style>

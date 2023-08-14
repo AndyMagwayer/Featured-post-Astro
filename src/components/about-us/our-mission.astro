@@ -1,0 +1,91 @@
+---
+---
+
+<section class="about">
+    <div class="container wrapper">
+      <!-- left -->
+      <div class="about-us">
+        <div class="top-title">Our mision</div>
+        <h2 class="title">
+            Creating valuable content for creatives all around the world
+        </h2>
+        <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+        </p>
+      </div>
+  
+      <!-- right -->
+      <div class="our-mission">
+        <div class="top-title">Our Vision</div>
+        <h3 class="title">
+            A platform that empowers individuals to improve
+        </h3>
+        <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <style lang="scss">
+    @import "../../assets/styles/variables.scss";
+  
+    .about {
+      padding-bottom: 128px;
+     
+  
+  
+  
+      .wrapper {
+        background-color: $gray-200;
+        padding: 96px 80px;
+        display: flex;
+        gap: 82px;
+        position: relative;
+  
+  
+  
+        .top-title {
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+        }
+  
+        .text {
+          color: $gray-400;
+        }
+  
+        .about-us {
+          width: 50%;
+  
+          .title {
+            line-height: 48px;
+            margin-bottom: 16px;
+          }
+  
+          .link {
+            font-size: 18px;
+            color: $accent;
+            font-weight: 700;
+            margin-top: 16px;
+            cursor: pointer;
+  
+            &:hover {
+              color: $primary;
+              text-decoration: underline;
+            }
+          }
+        }
+  
+        .our-mission {
+          width: 50%;
+  
+          .title {
+            line-height: 40px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  </style>
+
